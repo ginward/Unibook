@@ -1,0 +1,27 @@
+{
+  "name": "unibook",
+  "version": "1.0.0",
+  "description": "unibook server",
+  "main": "index.js",
+  "dependencies": {
+    "express": "4.13.3",
+    "jsonwebtoken":"5.4.1",
+    "mongoose":"4.3.4",
+    "debug":"2.2.0",
+    "redis":"2.4.2",
+    "postmark":"1.2.1",
+    "multer":"1.1.0",
+    "mmmagic":"0.4.1",
+    "cron":"1.1.0",
+    "body-parser":"1.14.2",
+    "content-filter":"1.0.22"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "unibook"
+  ],
+  "author": "Jinhua Wang",
+  "license": "UNLICENSED"
+}

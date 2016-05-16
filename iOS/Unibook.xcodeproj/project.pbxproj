@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6099AAC1C40709B003DA2B7 /* LoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6099AAB1C40709B003DA2B7 /* LoadingCell.m */; };
+		B6099AAF1C418472003DA2B7 /* SearchPaginationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6099AAE1C418472003DA2B7 /* SearchPaginationManager.m */; };
+		B6099AB41C41C4D8003DA2B7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6099AB31C41C4D8003DA2B7 /* DetailViewController.m */; };
+		B6566F8A1C5483BC00C62A37 /* CollectionTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6566F891C5483BC00C62A37 /* CollectionTableView.m */; };
+		B661D9201C39CDB500F73DE3 /* BookTitleController.m in Sources */ = {isa = PBXBuildFile; fileRef = B661D91F1C39CDB500F73DE3 /* BookTitleController.m */; };
+		B670232E1C55A36600724A6C /* MyHistoryPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670232D1C55A36600724A6C /* MyHistoryPostController.m */; };
+		B67E27271CE353C20043CDF6 /* libFlurry_7.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B67E27261CE353C20043CDF6 /* libFlurry_7.3.0.a */; };
+		B69466721C33A3C5002F6EFB /* ImageFileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = B69466711C33A3C5002F6EFB /* ImageFileSize.m */; };
+		B69466751C34B9B1002F6EFB /* UnibookAuthRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B69466741C34B9B1002F6EFB /* UnibookAuthRequest.m */; };
+		B69466781C34BE40002F6EFB /* UnibookTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B69466771C34BE40002F6EFB /* UnibookTokenRequest.m */; };
+		B694667B1C34C648002F6EFB /* UnibookMultipartReq.m in Sources */ = {isa = PBXBuildFile; fileRef = B694667A1C34C648002F6EFB /* UnibookMultipartReq.m */; };
+		B69466801C360DCF002F6EFB /* RegisterFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = B694667F1C360DCF002F6EFB /* RegisterFormController.m */; };
+		B69466831C360E10002F6EFB /* EmailFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69466821C360E10002F6EFB /* EmailFormController.m */; };
+		B69466861C36121A002F6EFB /* EmailVerifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69466851C36121A002F6EFB /* EmailVerifyController.m */; };
+		B694668A1C361F54002F6EFB /* LoginFormController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69466891C361F54002F6EFB /* LoginFormController.m */; };
+		B69466911C364676002F6EFB /* BackgroudColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B69466901C364676002F6EFB /* BackgroudColor.m */; };
+		B69466971C39C5F8002F6EFB /* BookConditionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69466961C39C5F8002F6EFB /* BookConditionController.m */; };
+		B694669A1C39C62A002F6EFB /* BookDescriptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69466991C39C62A002F6EFB /* BookDescriptionController.m */; };
+		B694669D1C39C65F002F6EFB /* NewPostResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = B694669C1C39C65F002F6EFB /* NewPostResultController.m */; };
+		B69466A01C39C6BB002F6EFB /* SharedPostManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B694669F1C39C6BA002F6EFB /* SharedPostManager.m */; };
+		B6A4B3301C51C04500D6A2E6 /* MyUnibookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A4B32F1C51C04500D6A2E6 /* MyUnibookController.m */; };
+		B6A6E8791C404DAE00EB8C6D /* PaginationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A6E8781C404DAE00EB8C6D /* PaginationManager.m */; };
+		B6BBA7361C335B6F006918E9 /* ProfileImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BBA7351C335B6F006918E9 /* ProfileImageController.m */; };
+		B6BBA7421C3372BA006918E9 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BBA7411C3372BA006918E9 /* FXBlurView.m */; };
+		B6BBA7441C3372D4006918E9 /* ImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BBA7431C3372D4006918E9 /* ImageCropView.m */; };
+		B6BCB61E1C3DD72200616F4D /* PostItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BCB61D1C3DD72200616F4D /* PostItemView.m */; };
+		B6BCB6221C3DD85C00616F4D /* PostItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BCB6211C3DD85C00616F4D /* PostItemWrapper.m */; };
+		B6BCB6251C3DDC7B00616F4D /* ProfileImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BCB6241C3DDC7B00616F4D /* ProfileImageDownloader.m */; };
+		B6BCB6281C3DDCFA00616F4D /* PostItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BCB6271C3DDCFA00616F4D /* PostItemCell.m */; };
+		B6E2063D1C64517D002DE7FB /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E2063C1C64517D002DE7FB /* libz.1.dylib */; };
+		B6E2063F1C6451A6002DE7FB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E2063E1C6451A6002DE7FB /* libsqlite3.dylib */; };
+		B6E206411C6451D9002DE7FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E206401C6451D9002DE7FB /* SystemConfiguration.framework */; };
+		B6E206501C6453D9002DE7FB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E2064F1C6453D9002DE7FB /* CoreData.framework */; };
+		B6E206541C645B3C002DE7FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E206531C645B3C002DE7FB /* Security.framework */; };
+		B6FF146D1C31B2E0002CAB5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF146C1C31B2E0002CAB5C /* main.m */; };
+		B6FF14701C31B2E0002CAB5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF146F1C31B2E0002CAB5C /* AppDelegate.m */; };
+		B6FF14731C31B2E0002CAB5C /* NewsFeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF14721C31B2E0002CAB5C /* NewsFeedController.m */; };
+		B6FF14761C31B2E0002CAB5C /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF14751C31B2E0002CAB5C /* SearchViewController.m */; };
+		B6FF14791C31B2E0002CAB5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FF14771C31B2E0002CAB5C /* Main.storyboard */; };
+		B6FF147B1C31B2E0002CAB5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FF147A1C31B2E0002CAB5C /* Assets.xcassets */; };
+		B6FF147E1C31B2E0002CAB5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FF147C1C31B2E0002CAB5C /* LaunchScreen.storyboard */; };
+		B6FF14891C31B2E1002CAB5C /* UnibookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF14881C31B2E1002CAB5C /* UnibookTests.m */; };
+		B6FF14941C31B2E1002CAB5C /* UnibookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF14931C31B2E1002CAB5C /* UnibookUITests.m */; };
+		B6FF14AB1C322A7A002CAB5C /* SharedAuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF14AA1C322A7A002CAB5C /* SharedAuthManager.m */; };
+		B6FF14B01C324857002CAB5C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF14AF1C324857002CAB5C /* Constants.m */; };
+		B6FF14B31C33166B002CAB5C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF14B21C33166B002CAB5C /* LoginViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6FF14851C31B2E1002CAB5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6FF14601C31B2E0002CAB5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6FF14671C31B2E0002CAB5C;
+			remoteInfo = Unibook;
+		};
+		B6FF14901C31B2E1002CAB5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6FF14601C31B2E0002CAB5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6FF14671C31B2E0002CAB5C;
+			remoteInfo = Unibook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6099AAA1C40709B003DA2B7 /* LoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCell.h; sourceTree = "<group>"; };
+		B6099AAB1C40709B003DA2B7 /* LoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCell.m; sourceTree = "<group>"; };
+		B6099AAD1C418465003DA2B7 /* SearchPaginationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchPaginationManager.h; sourceTree = "<group>"; };
+		B6099AAE1C418472003DA2B7 /* SearchPaginationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchPaginationManager.m; sourceTree = "<group>"; };
+		B6099AB21C41C4CA003DA2B7 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B6099AB31C41C4D8003DA2B7 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B6566F881C5483AB00C62A37 /* CollectionTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionTableView.h; sourceTree = "<group>"; };
+		B6566F891C5483BC00C62A37 /* CollectionTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionTableView.m; sourceTree = "<group>"; };
+		B661D91F1C39CDB500F73DE3 /* BookTitleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookTitleController.m; sourceTree = "<group>"; };
+		B670232C1C55A34C00724A6C /* MyHistoryPostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyHistoryPostController.h; sourceTree = "<group>"; };
+		B670232D1C55A36600724A6C /* MyHistoryPostController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHistoryPostController.m; sourceTree = "<group>"; };
+		B67E27241CE353C20043CDF6 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = "Flurry iPhone SDK viPhone SDK 7/Flurry-iOS-7.3.0/Flurry/Flurry.h"; sourceTree = SOURCE_ROOT; };
+		B67E27251CE353C20043CDF6 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlurryWatch.h; path = "Flurry iPhone SDK viPhone SDK 7/Flurry-iOS-7.3.0/Flurry/FlurryWatch.h"; sourceTree = SOURCE_ROOT; };
+		B67E27261CE353C20043CDF6 /* libFlurry_7.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_7.3.0.a; path = "Flurry iPhone SDK viPhone SDK 7/Flurry-iOS-7.3.0/Flurry/libFlurry_7.3.0.a"; sourceTree = SOURCE_ROOT; };
+		B69466701C33A3B7002F6EFB /* ImageFileSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFileSize.h; sourceTree = "<group>"; };
+		B69466711C33A3C5002F6EFB /* ImageFileSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFileSize.m; sourceTree = "<group>"; };
+		B69466731C34B9A1002F6EFB /* UnibookAuthRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnibookAuthRequest.h; sourceTree = "<group>"; };
+		B69466741C34B9B1002F6EFB /* UnibookAuthRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnibookAuthRequest.m; sourceTree = "<group>"; };
+		B69466761C34BE02002F6EFB /* UnibookTokenRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnibookTokenRequest.h; sourceTree = "<group>"; };
+		B69466771C34BE40002F6EFB /* UnibookTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnibookTokenRequest.m; sourceTree = "<group>"; };
+		B69466791C34C638002F6EFB /* UnibookMultipartReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnibookMultipartReq.h; sourceTree = "<group>"; };
+		B694667A1C34C648002F6EFB /* UnibookMultipartReq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnibookMultipartReq.m; sourceTree = "<group>"; };
+		B694667E1C360DBF002F6EFB /* RegisterFormController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterFormController.h; sourceTree = "<group>"; };
+		B694667F1C360DCF002F6EFB /* RegisterFormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterFormController.m; sourceTree = "<group>"; };
+		B69466811C360E07002F6EFB /* EmailFormController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailFormController.h; sourceTree = "<group>"; };
+		B69466821C360E10002F6EFB /* EmailFormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailFormController.m; sourceTree = "<group>"; };
+		B69466841C36120B002F6EFB /* EmailVerifyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailVerifyController.h; sourceTree = "<group>"; };
+		B69466851C36121A002F6EFB /* EmailVerifyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailVerifyController.m; sourceTree = "<group>"; };
+		B69466881C361F44002F6EFB /* LoginFormController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginFormController.h; sourceTree = "<group>"; };
+		B69466891C361F54002F6EFB /* LoginFormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginFormController.m; sourceTree = "<group>"; };
+		B694668F1C364665002F6EFB /* BackgroundColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundColor.h; sourceTree = "<group>"; };
+		B69466901C364676002F6EFB /* BackgroudColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroudColor.m; sourceTree = "<group>"; };
+		B69466921C39C5AA002F6EFB /* BookTitleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookTitleController.h; sourceTree = "<group>"; };
+		B69466951C39C5EC002F6EFB /* BookConditionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookConditionController.h; sourceTree = "<group>"; };
+		B69466961C39C5F8002F6EFB /* BookConditionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookConditionController.m; sourceTree = "<group>"; };
+		B69466981C39C61C002F6EFB /* BookDescriptionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookDescriptionController.h; sourceTree = "<group>"; };
+		B69466991C39C62A002F6EFB /* BookDescriptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDescriptionController.m; sourceTree = "<group>"; };
+		B694669B1C39C655002F6EFB /* NewPostResultController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewPostResultController.h; sourceTree = "<group>"; };
+		B694669C1C39C65F002F6EFB /* NewPostResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPostResultController.m; sourceTree = "<group>"; };
+		B694669E1C39C6B0002F6EFB /* SharedPostManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedPostManager.h; sourceTree = "<group>"; };
+		B694669F1C39C6BA002F6EFB /* SharedPostManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedPostManager.m; sourceTree = "<group>"; };
+		B6A4B32E1C51C03800D6A2E6 /* MyUnibookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUnibookController.h; sourceTree = "<group>"; };
+		B6A4B32F1C51C04500D6A2E6 /* MyUnibookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUnibookController.m; sourceTree = "<group>"; };
+		B6A6E8771C404DA000EB8C6D /* PaginationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaginationManager.h; sourceTree = "<group>"; };
+		B6A6E8781C404DAE00EB8C6D /* PaginationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginationManager.m; sourceTree = "<group>"; };
+		B6BBA7351C335B6F006918E9 /* ProfileImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileImageController.m; sourceTree = "<group>"; };
+		B6BBA73F1C337251006918E9 /* ImageCropView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCropView.h; sourceTree = "<group>"; };
+		B6BBA7401C337276006918E9 /* FXBlurView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		B6BBA7411C3372BA006918E9 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		B6BBA7431C3372D4006918E9 /* ImageCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCropView.m; sourceTree = "<group>"; };
+		B6BCB61C1C3DD71500616F4D /* PostItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostItemView.h; sourceTree = "<group>"; };
+		B6BCB61D1C3DD72200616F4D /* PostItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostItemView.m; sourceTree = "<group>"; };
+		B6BCB6201C3DD84E00616F4D /* PostItemWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostItemWrapper.h; sourceTree = "<group>"; };
+		B6BCB6211C3DD85C00616F4D /* PostItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostItemWrapper.m; sourceTree = "<group>"; };
+		B6BCB6231C3DDC7200616F4D /* ProfileImageDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileImageDownloader.h; sourceTree = "<group>"; };
+		B6BCB6241C3DDC7B00616F4D /* ProfileImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileImageDownloader.m; sourceTree = "<group>"; };
+		B6BCB6261C3DDCEE00616F4D /* PostItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostItemCell.h; sourceTree = "<group>"; };
+		B6BCB6271C3DDCFA00616F4D /* PostItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostItemCell.m; sourceTree = "<group>"; };
+		B6E2063C1C64517D002DE7FB /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		B6E2063E1C6451A6002DE7FB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		B6E206401C6451D9002DE7FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B6E2064F1C6453D9002DE7FB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B6E206531C645B3C002DE7FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B6FF14681C31B2E0002CAB5C /* Unibook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unibook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6FF146C1C31B2E0002CAB5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6FF146E1C31B2E0002CAB5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6FF146F1C31B2E0002CAB5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6FF14711C31B2E0002CAB5C /* NewsFeedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsFeedController.h; sourceTree = "<group>"; };
+		B6FF14721C31B2E0002CAB5C /* NewsFeedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsFeedController.m; sourceTree = "<group>"; };
+		B6FF14741C31B2E0002CAB5C /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		B6FF14751C31B2E0002CAB5C /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		B6FF14781C31B2E0002CAB5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6FF147A1C31B2E0002CAB5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6FF147D1C31B2E0002CAB5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6FF147F1C31B2E0002CAB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6FF14841C31B2E1002CAB5C /* UnibookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnibookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6FF14881C31B2E1002CAB5C /* UnibookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnibookTests.m; sourceTree = "<group>"; };
+		B6FF148A1C31B2E1002CAB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6FF148F1C31B2E1002CAB5C /* UnibookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnibookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6FF14931C31B2E1002CAB5C /* UnibookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnibookUITests.m; sourceTree = "<group>"; };
+		B6FF14951C31B2E1002CAB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6FF14A91C322A63002CAB5C /* SharedAuthManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedAuthManager.h; sourceTree = "<group>"; };
+		B6FF14AA1C322A7A002CAB5C /* SharedAuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedAuthManager.m; sourceTree = "<group>"; };
+		B6FF14AE1C32484D002CAB5C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		B6FF14AF1C324857002CAB5C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		B6FF14B11C331656002CAB5C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B6FF14B21C33166B002CAB5C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B6FF14BD1C33532E002CAB5C /* ProfileImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileImageController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6FF14651C31B2E0002CAB5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E206541C645B3C002DE7FB /* Security.framework in Frameworks */,
+				B6E206501C6453D9002DE7FB /* CoreData.framework in Frameworks */,
+				B6E206411C6451D9002DE7FB /* SystemConfiguration.framework in Frameworks */,
+				B6E2063F1C6451A6002DE7FB /* libsqlite3.dylib in Frameworks */,
+				B67E27271CE353C20043CDF6 /* libFlurry_7.3.0.a in Frameworks */,
+				B6E2063D1C64517D002DE7FB /* libz.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6FF14811C31B2E1002CAB5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6FF148C1C31B2E1002CAB5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		078795D32A4E30DA6DEBBC06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6E206531C645B3C002DE7FB /* Security.framework */,
+				B6E2064F1C6453D9002DE7FB /* CoreData.framework */,
+				B6E206401C6451D9002DE7FB /* SystemConfiguration.framework */,
+				B6E2063E1C6451A6002DE7FB /* libsqlite3.dylib */,
+				B6E2063C1C64517D002DE7FB /* libz.1.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6099AB01C418811003DA2B7 /* PostItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				B6099AAA1C40709B003DA2B7 /* LoadingCell.h */,
+				B6099AAB1C40709B003DA2B7 /* LoadingCell.m */,
+				B6BCB6261C3DDCEE00616F4D /* PostItemCell.h */,
+				B6BCB6271C3DDCFA00616F4D /* PostItemCell.m */,
+				B6BCB61C1C3DD71500616F4D /* PostItemView.h */,
+				B6BCB61D1C3DD72200616F4D /* PostItemView.m */,
+				B6BCB6201C3DD84E00616F4D /* PostItemWrapper.h */,
+				B6BCB6211C3DD85C00616F4D /* PostItemWrapper.m */,
+				B6BCB6231C3DDC7200616F4D /* ProfileImageDownloader.h */,
+				B6BCB6241C3DDC7B00616F4D /* ProfileImageDownloader.m */,
+			);
+			name = PostItemCell;
+			sourceTree = "<group>";
+		};
+		B6099AB11C41C4BD003DA2B7 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				B6099AB21C41C4CA003DA2B7 /* DetailViewController.h */,
+				B6099AB31C41C4D8003DA2B7 /* DetailViewController.m */,
+			);
+			name = DetailView;
+			sourceTree = "<group>";
+		};
+		B694666F1C33A3A7002F6EFB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B69466701C33A3B7002F6EFB /* ImageFileSize.h */,
+				B69466711C33A3C5002F6EFB /* ImageFileSize.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		B6E2065A1C645C1D002DE7FB /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				B67E27241CE353C20043CDF6 /* Flurry.h */,
+				B67E27251CE353C20043CDF6 /* FlurryWatch.h */,
+				B67E27261CE353C20043CDF6 /* libFlurry_7.3.0.a */,
+			);
+			name = Flurry;
+			sourceTree = "<group>";
+		};
+		B6FF145F1C31B2E0002CAB5C = {
+			isa = PBXGroup;
+			children = (
+				B6FF146A1C31B2E0002CAB5C /* Unibook */,
+				B6FF14871C31B2E1002CAB5C /* UnibookTests */,
+				B6FF14921C31B2E1002CAB5C /* UnibookUITests */,
+				B6FF14691C31B2E0002CAB5C /* Products */,
+				078795D32A4E30DA6DEBBC06 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6FF14691C31B2E0002CAB5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF14681C31B2E0002CAB5C /* Unibook.app */,
+				B6FF14841C31B2E1002CAB5C /* UnibookTests.xctest */,
+				B6FF148F1C31B2E1002CAB5C /* UnibookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6FF146A1C31B2E0002CAB5C /* Unibook */ = {
+			isa = PBXGroup;
+			children = (
+				B6E2065A1C645C1D002DE7FB /* Flurry */,
+				B694666F1C33A3A7002F6EFB /* Utils */,
+				B6FF14AC1C323177002CAB5C /* Network */,
+				B6FF14A81C321E1F002CAB5C /* Data */,
+				B6FF14A21C321B1A002CAB5C /* Controllers */,
+				B6FF146E1C31B2E0002CAB5C /* AppDelegate.h */,
+				B6FF146F1C31B2E0002CAB5C /* AppDelegate.m */,
+				B6FF14771C31B2E0002CAB5C /* Main.storyboard */,
+				B6FF147A1C31B2E0002CAB5C /* Assets.xcassets */,
+				B6FF147C1C31B2E0002CAB5C /* LaunchScreen.storyboard */,
+				B6FF147F1C31B2E0002CAB5C /* Info.plist */,
+				B6FF146B1C31B2E0002CAB5C /* Supporting Files */,
+			);
+			path = Unibook;
+			sourceTree = "<group>";
+		};
+		B6FF146B1C31B2E0002CAB5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF146C1C31B2E0002CAB5C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6FF14871C31B2E1002CAB5C /* UnibookTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF14881C31B2E1002CAB5C /* UnibookTests.m */,
+				B6FF148A1C31B2E1002CAB5C /* Info.plist */,
+			);
+			path = UnibookTests;
+			sourceTree = "<group>";
+		};
+		B6FF14921C31B2E1002CAB5C /* UnibookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF14931C31B2E1002CAB5C /* UnibookUITests.m */,
+				B6FF14951C31B2E1002CAB5C /* Info.plist */,
+			);
+			path = UnibookUITests;
+			sourceTree = "<group>";
+		};
+		B6FF14A21C321B1A002CAB5C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6099AB11C41C4BD003DA2B7 /* DetailView */,
+				B6099AB01C418811003DA2B7 /* PostItemCell */,
+				B6FF14AD1C3240F6002CAB5C /* LoginView */,
+				B6FF14A71C321BD8002CAB5C /* NewPostView */,
+				B6FF14A61C321BCE002CAB5C /* MyUnibookView */,
+				B6FF14A31C321B32002CAB5C /* NewsFeedView */,
+				B6FF14A51C321BC4002CAB5C /* SearchView */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B6FF14A31C321B32002CAB5C /* NewsFeedView */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF14711C31B2E0002CAB5C /* NewsFeedController.h */,
+				B6FF14721C31B2E0002CAB5C /* NewsFeedController.m */,
+				B6A6E8771C404DA000EB8C6D /* PaginationManager.h */,
+				B6A6E8781C404DAE00EB8C6D /* PaginationManager.m */,
+			);
+			name = NewsFeedView;
+			sourceTree = "<group>";
+		};
+		B6FF14A51C321BC4002CAB5C /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF14741C31B2E0002CAB5C /* SearchViewController.h */,
+				B6FF14751C31B2E0002CAB5C /* SearchViewController.m */,
+				B6099AAD1C418465003DA2B7 /* SearchPaginationManager.h */,
+				B6099AAE1C418472003DA2B7 /* SearchPaginationManager.m */,
+			);
+			name = SearchView;
+			sourceTree = "<group>";
+		};
+		B6FF14A61C321BCE002CAB5C /* MyUnibookView */ = {
+			isa = PBXGroup;
+			children = (
+				B6A4B32E1C51C03800D6A2E6 /* MyUnibookController.h */,
+				B6A4B32F1C51C04500D6A2E6 /* MyUnibookController.m */,
+				B6566F881C5483AB00C62A37 /* CollectionTableView.h */,
+				B6566F891C5483BC00C62A37 /* CollectionTableView.m */,
+				B670232C1C55A34C00724A6C /* MyHistoryPostController.h */,
+				B670232D1C55A36600724A6C /* MyHistoryPostController.m */,
+			);
+			name = MyUnibookView;
+			sourceTree = "<group>";
+		};
+		B6FF14A71C321BD8002CAB5C /* NewPostView */ = {
+			isa = PBXGroup;
+			children = (
+				B69466921C39C5AA002F6EFB /* BookTitleController.h */,
+				B661D91F1C39CDB500F73DE3 /* BookTitleController.m */,
+				B69466951C39C5EC002F6EFB /* BookConditionController.h */,
+				B69466961C39C5F8002F6EFB /* BookConditionController.m */,
+				B69466981C39C61C002F6EFB /* BookDescriptionController.h */,
+				B69466991C39C62A002F6EFB /* BookDescriptionController.m */,
+				B694669B1C39C655002F6EFB /* NewPostResultController.h */,
+				B694669C1C39C65F002F6EFB /* NewPostResultController.m */,
+			);
+			name = NewPostView;
+			sourceTree = "<group>";
+		};
+		B6FF14A81C321E1F002CAB5C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF14B41C334FBC002CAB5C /* ImageCrop */,
+				B6FF14A91C322A63002CAB5C /* SharedAuthManager.h */,
+				B6FF14AA1C322A7A002CAB5C /* SharedAuthManager.m */,
+				B694669E1C39C6B0002F6EFB /* SharedPostManager.h */,
+				B694669F1C39C6BA002F6EFB /* SharedPostManager.m */,
+				B6FF14AE1C32484D002CAB5C /* Constants.h */,
+				B6FF14AF1C324857002CAB5C /* Constants.m */,
+				B694668F1C364665002F6EFB /* BackgroundColor.h */,
+				B69466901C364676002F6EFB /* BackgroudColor.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		B6FF14AC1C323177002CAB5C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B69466731C34B9A1002F6EFB /* UnibookAuthRequest.h */,
+				B69466741C34B9B1002F6EFB /* UnibookAuthRequest.m */,
+				B69466761C34BE02002F6EFB /* UnibookTokenRequest.h */,
+				B69466771C34BE40002F6EFB /* UnibookTokenRequest.m */,
+				B69466791C34C638002F6EFB /* UnibookMultipartReq.h */,
+				B694667A1C34C648002F6EFB /* UnibookMultipartReq.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		B6FF14AD1C3240F6002CAB5C /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF14B11C331656002CAB5C /* LoginViewController.h */,
+				B6FF14B21C33166B002CAB5C /* LoginViewController.m */,
+				B69466881C361F44002F6EFB /* LoginFormController.h */,
+				B69466891C361F54002F6EFB /* LoginFormController.m */,
+				B694667E1C360DBF002F6EFB /* RegisterFormController.h */,
+				B694667F1C360DCF002F6EFB /* RegisterFormController.m */,
+				B69466811C360E07002F6EFB /* EmailFormController.h */,
+				B69466821C360E10002F6EFB /* EmailFormController.m */,
+				B69466841C36120B002F6EFB /* EmailVerifyController.h */,
+				B69466851C36121A002F6EFB /* EmailVerifyController.m */,
+				B6FF14BD1C33532E002CAB5C /* ProfileImageController.h */,
+				B6BBA7351C335B6F006918E9 /* ProfileImageController.m */,
+			);
+			name = LoginView;
+			sourceTree = "<group>";
+		};
+		B6FF14B41C334FBC002CAB5C /* ImageCrop */ = {
+			isa = PBXGroup;
+			children = (
+				B6BBA7401C337276006918E9 /* FXBlurView.h */,
+				B6BBA7411C3372BA006918E9 /* FXBlurView.m */,
+				B6BBA73F1C337251006918E9 /* ImageCropView.h */,
+				B6BBA7431C3372D4006918E9 /* ImageCropView.m */,
+			);
+			name = ImageCrop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6FF14671C31B2E0002CAB5C /* Unibook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6FF14981C31B2E1002CAB5C /* Build configuration list for PBXNativeTarget "Unibook" */;
+			buildPhases = (
+				B6FF14641C31B2E0002CAB5C /* Sources */,
+				B6FF14651C31B2E0002CAB5C /* Frameworks */,
+				B6FF14661C31B2E0002CAB5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Unibook;
+			productName = Unibook;
+			productReference = B6FF14681C31B2E0002CAB5C /* Unibook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6FF14831C31B2E1002CAB5C /* UnibookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6FF149B1C31B2E1002CAB5C /* Build configuration list for PBXNativeTarget "UnibookTests" */;
+			buildPhases = (
+				343A3A240002B89685A80B29 /* Check Pods Manifest.lock */,
+				B6FF14801C31B2E1002CAB5C /* Sources */,
+				B6FF14811C31B2E1002CAB5C /* Frameworks */,
+				B6FF14821C31B2E1002CAB5C /* Resources */,
+				0DCBB876B330CAF7B097EAD1 /* Embed Pods Frameworks */,
+				F32525936E2E3A855DBBC7E5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6FF14861C31B2E1002CAB5C /* PBXTargetDependency */,
+			);
+			name = UnibookTests;
+			productName = UnibookTests;
+			productReference = B6FF14841C31B2E1002CAB5C /* UnibookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6FF148E1C31B2E1002CAB5C /* UnibookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6FF149E1C31B2E1002CAB5C /* Build configuration list for PBXNativeTarget "UnibookUITests" */;
+			buildPhases = (
+				7768B3141659D26498ED0E3B /* Check Pods Manifest.lock */,
+				B6FF148B1C31B2E1002CAB5C /* Sources */,
+				B6FF148C1C31B2E1002CAB5C /* Frameworks */,
+				B6FF148D1C31B2E1002CAB5C /* Resources */,
+				5BAFCABAC7F73921CF0FA148 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6FF14911C31B2E1002CAB5C /* PBXTargetDependency */,
+			);
+			name = UnibookUITests;
+			productName = UnibookUITests;
+			productReference = B6FF148F1C31B2E1002CAB5C /* UnibookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6FF14601C31B2E0002CAB5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jinhua Wang";
+				TargetAttributes = {
+					B6FF14671C31B2E0002CAB5C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 98LA646PC3;
+					};
+					B6FF14831C31B2E1002CAB5C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B6FF14671C31B2E0002CAB5C;
+					};
+					B6FF148E1C31B2E1002CAB5C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B6FF14671C31B2E0002CAB5C;
+					};
+				};
+			};
+			buildConfigurationList = B6FF14631C31B2E0002CAB5C /* Build configuration list for PBXProject "Unibook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6FF145F1C31B2E0002CAB5C;
+			productRefGroup = B6FF14691C31B2E0002CAB5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6FF14671C31B2E0002CAB5C /* Unibook */,
+				B6FF14831C31B2E1002CAB5C /* UnibookTests */,
+				B6FF148E1C31B2E1002CAB5C /* UnibookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6FF14661C31B2E0002CAB5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6FF147E1C31B2E0002CAB5C /* LaunchScreen.storyboard in Resources */,
+				B6FF147B1C31B2E0002CAB5C /* Assets.xcassets in Resources */,
+				B6FF14791C31B2E0002CAB5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6FF14821C31B2E1002CAB5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6FF148D1C31B2E1002CAB5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DCBB876B330CAF7B097EAD1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnibookTests/Pods-UnibookTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		343A3A240002B89685A80B29 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BAFCABAC7F73921CF0FA148 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnibookUITests/Pods-UnibookUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7768B3141659D26498ED0E3B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F32525936E2E3A855DBBC7E5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnibookTests/Pods-UnibookTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6FF14641C31B2E0002CAB5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A6E8791C404DAE00EB8C6D /* PaginationManager.m in Sources */,
+				B69466831C360E10002F6EFB /* EmailFormController.m in Sources */,
+				B694669A1C39C62A002F6EFB /* BookDescriptionController.m in Sources */,
+				B6099AB41C41C4D8003DA2B7 /* DetailViewController.m in Sources */,
+				B69466861C36121A002F6EFB /* EmailVerifyController.m in Sources */,
+				B670232E1C55A36600724A6C /* MyHistoryPostController.m in Sources */,
+				B6FF14AB1C322A7A002CAB5C /* SharedAuthManager.m in Sources */,
+				B6BBA7361C335B6F006918E9 /* ProfileImageController.m in Sources */,
+				B6FF14761C31B2E0002CAB5C /* SearchViewController.m in Sources */,
+				B69466781C34BE40002F6EFB /* UnibookTokenRequest.m in Sources */,
+				B69466971C39C5F8002F6EFB /* BookConditionController.m in Sources */,
+				B6FF14701C31B2E0002CAB5C /* AppDelegate.m in Sources */,
+				B6099AAC1C40709B003DA2B7 /* LoadingCell.m in Sources */,
+				B661D9201C39CDB500F73DE3 /* BookTitleController.m in Sources */,
+				B6BCB6281C3DDCFA00616F4D /* PostItemCell.m in Sources */,
+				B6FF14731C31B2E0002CAB5C /* NewsFeedController.m in Sources */,
+				B6FF14B31C33166B002CAB5C /* LoginViewController.m in Sources */,
+				B694667B1C34C648002F6EFB /* UnibookMultipartReq.m in Sources */,
+				B69466721C33A3C5002F6EFB /* ImageFileSize.m in Sources */,
+				B69466A01C39C6BB002F6EFB /* SharedPostManager.m in Sources */,
+				B6A4B3301C51C04500D6A2E6 /* MyUnibookController.m in Sources */,
+				B6BCB6251C3DDC7B00616F4D /* ProfileImageDownloader.m in Sources */,
+				B6BBA7441C3372D4006918E9 /* ImageCropView.m in Sources */,
+				B6566F8A1C5483BC00C62A37 /* CollectionTableView.m in Sources */,
+				B6FF146D1C31B2E0002CAB5C /* main.m in Sources */,
+				B6BCB61E1C3DD72200616F4D /* PostItemView.m in Sources */,
+				B694669D1C39C65F002F6EFB /* NewPostResultController.m in Sources */,
+				B6099AAF1C418472003DA2B7 /* SearchPaginationManager.m in Sources */,
+				B69466751C34B9B1002F6EFB /* UnibookAuthRequest.m in Sources */,
+				B69466801C360DCF002F6EFB /* RegisterFormController.m in Sources */,
+				B69466911C364676002F6EFB /* BackgroudColor.m in Sources */,
+				B694668A1C361F54002F6EFB /* LoginFormController.m in Sources */,
+				B6FF14B01C324857002CAB5C /* Constants.m in Sources */,
+				B6BCB6221C3DD85C00616F4D /* PostItemWrapper.m in Sources */,
+				B6BBA7421C3372BA006918E9 /* FXBlurView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6FF14801C31B2E1002CAB5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6FF14891C31B2E1002CAB5C /* UnibookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6FF148B1C31B2E1002CAB5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6FF14941C31B2E1002CAB5C /* UnibookUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6FF14861C31B2E1002CAB5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6FF14671C31B2E0002CAB5C /* Unibook */;
+			targetProxy = B6FF14851C31B2E1002CAB5C /* PBXContainerItemProxy */;
+		};
+		B6FF14911C31B2E1002CAB5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6FF14671C31B2E0002CAB5C /* Unibook */;
+			targetProxy = B6FF14901C31B2E1002CAB5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6FF14771C31B2E0002CAB5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6FF14781C31B2E0002CAB5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6FF147C1C31B2E0002CAB5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6FF147D1C31B2E0002CAB5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6FF14971C31B2E1002CAB5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6FF149A1C31B2E1002CAB5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jinhua Wang (98LA646PC3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jinhua Wang (98LA646PC3)";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Unibook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+					"$(PROJECT_DIR)/Flurry",
+					iPhone,
+					SDK,
+					viPhone,
+					SDK,
+					"7/Flurry-iOS-7.3.0/Flurry",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hereips.Unibook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B6FF149D1C31B2E1002CAB5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UnibookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hereips.UnibookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unibook.app/Unibook";
+			};
+			name = Release;
+		};
+		B6FF14A01C31B2E1002CAB5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UnibookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hereips.UnibookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Unibook;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6FF14631C31B2E0002CAB5C /* Build configuration list for PBXProject "Unibook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6FF14971C31B2E1002CAB5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6FF14981C31B2E1002CAB5C /* Build configuration list for PBXNativeTarget "Unibook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6FF149A1C31B2E1002CAB5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6FF149B1C31B2E1002CAB5C /* Build configuration list for PBXNativeTarget "UnibookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6FF149D1C31B2E1002CAB5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6FF149E1C31B2E1002CAB5C /* Build configuration list for PBXNativeTarget "UnibookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6FF14A01C31B2E1002CAB5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6FF14601C31B2E0002CAB5C /* Project object */;
+}
