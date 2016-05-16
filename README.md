@@ -4,6 +4,8 @@ This is the Unibook Textbook Exchange platform. It consists of a iOS client writ
 
 The Server uses a non-SQL database - MongoDB and Redis-data store. The config file for the password to DB can be found at Server/config.js
 
+It is recommended that you use a server acting as a reverse-proxy (such as Nginx). The server is written so that it is scalable. You can run multiple instances in the background. 
+
 The iOS client is not the strength of this project. I have to confess that I am not an expert in making the User Interface work in all sizes of the iphones. 
 
 The code is licensed under the MIT license.
