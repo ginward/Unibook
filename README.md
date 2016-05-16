@@ -8,7 +8,9 @@ It is recommended that you use a server acting as a reverse-proxy (such as Nginx
 
 The iOS client is not the strength of this project. I have to confess that I am not an expert in making the User Interface work with all sizes of the iPhones. 
 
-The code is licensed under the MIT license.
+I used Flurry to collect App performance data such as the number of Unique visitors. You can delete Flurry from the AppDelegate.m and AppDelegate.h meanwhile removing the flurry library from the project.
+
+The code is released under the MIT license. Have fun.
 
 The MIT License (MIT)
 Copyright (c) <2015> <Jinhua Wang>
